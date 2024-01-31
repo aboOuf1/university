@@ -1,0 +1,26 @@
+@import "base";
+@import "typography";
+
+@import "sidebar";
+@import "header";
+@import "doctors";
+@import "story";
+
+@import "navigation";
+@import "footer";
+@import "postsHome";
+@import "sliders";
+
+@import "meetings";
+@import "search-overlay";
+@import "results-overlay";
+//internal
+@import "internal/content-one";
+@import "internal/header";
+@import "internal/content-two";
+@import "internal/doctors";
+@import "internal/sidebar-content";
+@import "internal/blog-section";
+@import "internal/subjects";
+
+@import "internal/searchPhp";

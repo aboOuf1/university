@@ -1,0 +1,15 @@
+.internal__content--one {
+  margin: 15rem 0;
+  grid-column: center-start / col-end 6;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-row: 4/5;
+    grid-column: center-start/center-end;
+    margin-top: 0;
+  }
+}
+
+.internal__content--one__notSidebar {
+  margin: 10rem 0; //10 (box 5rem)
+  grid-column: center-start / center-end;
+}

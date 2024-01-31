@@ -1,0 +1,83 @@
+.blog-section {
+  margin: 10rem 0;
+  grid-column: center-start / center-end;
+
+  &__post-item {
+    margin: 5rem 0;
+
+    a {
+      text-decoration: none;
+      color: $color-grey-dark-1;
+    }
+
+    &:not(:nth-last-child(2)) {
+      border-bottom: solid 0.1rem $color-primary;
+    }
+
+    & .meeting-summary {
+      margin-bottom: 3rem;
+    }
+
+    & .doctors__list {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__box {
+    display: inline-block;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    padding: 1rem 2rem;
+    margin: 3rem 0;
+    border-radius: 1rem;
+
+    & span {
+      font-weight: 600;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $color-grey-light-1;
+      &:hover {
+        color: $color-grey-dark-1;
+      }
+    }
+  }
+
+  &__content {
+    .reading-more {
+      display: inline-block;
+      background-color: $color-primary;
+      padding: 1rem 2rem;
+      margin: 3rem 0;
+      border-radius: 1rem;
+
+      &:hover {
+        background-color: $color-primary-dark;
+      }
+    }
+
+    & a {
+      color: $color-grey-light-1;
+    }
+  }
+
+  .paginate {
+    & .page-numbers {
+      text-decoration: none;
+      color: $color-primary;
+
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+
+    & .current {
+      color: $color-grey-dark-1;
+
+      &:hover {
+        color: $color-grey-dark-1;
+      }
+    }
+  }
+}

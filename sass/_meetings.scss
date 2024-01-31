@@ -1,0 +1,83 @@
+.meetings {
+  grid-column: center-start / center-end;
+  margin-top: 15rem;
+}
+
+.meeting-summary__cont {
+  display: flex;
+}
+
+.meeting-summary {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+
+  &__date {
+    min-width: 10rem;
+    min-height: 10rem;
+    background-color: $color-primary;
+    padding: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $color-grey-dark-2;
+  }
+
+  &__month {
+    display: block;
+  }
+
+  &__day {
+    display: block;
+  }
+
+  &__content {
+    &--title {
+      padding: 1rem;
+    }
+  }
+}
+
+.blog-section {
+  & .meeting-summary:nth-last-child(2) {
+    margin-bottom: 5rem;
+  }
+
+  & .meeting-summary:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: $bp-largest) {
+  .meeting-summary__cont {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .meeting-summary__date {
+    min-width: 9rem;
+    min-height: 9rem;
+  }
+}
+
+.line-break {
+  margin-top: 5rem;
+  color: $color-primary;
+}
+
+.section-break {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}

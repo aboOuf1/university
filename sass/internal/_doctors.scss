@@ -1,0 +1,23 @@
+.internal__doctors {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  & .doctors {
+    background-color: white;
+  }
+
+  & .doctors__list {
+    grid-template-columns: repeat(3, min-content max-content);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: min-content max-content;
+    }
+  }
+}
+
+.doctors__img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.5rem solid $color-primary;
+}
